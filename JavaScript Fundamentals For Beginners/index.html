@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Learning JavaScript</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body onload="showDate()">
+	
+
+
+	<div class="header">
+		<h1 id='heading'>Learing JavaScript</h1>
+		<p>With Brad Traversy</p>
+	</div>
+	<div class="container">
+		<button onclick="changeText()">Click Me</button>
+	</div>
+
+	<div class="container">
+		<h1 id="date"></h1>
+		<button onclick="showDate()">Show Date</button>
+	</div>
+
+	<div class="container">
+		<button onmouseover="showTime()" onmouseout="clearDate()">Show Time</button>
+		<p id="time"></p>
+	</div>
+
+
+
+
+
+
+	
+	<script>
+		
+		// var number1 = 35;
+		// var number2 = '40';
+
+
+		// alert('My Favorite number is '+number1+number2);
+
+
+		// Variable can contain letters ,number ,underscores, dollar sign
+		// begins with a letters
+		// _$
+
+		// var test = 'This is a Test';
+		// var Test = 'This s another test';
+
+		// alert(Test);
+
+		// Camel case
+
+		var myFavoriteNumber;
+
+		// partial case
+
+		var MyFavoriteNumber;
+
+		//underscore
+
+		var my_favorite_number;
+
+
+
+
+		// ARRAYS	
+
+		// var colors = ['red','blue','green'];
+
+		var colors = new Array('red','yellow','orange');
+
+		// colors[3]='green';
+
+		colors.push('purple');
+
+		// alert(colors[3]);
+
+		// var numbers = [5,55,6,'sujit',1,4];
+
+		// alert(numbers.reverse());
+
+
+		// LOOPS
+
+		// for
+		// for(var i = 0; i <= 10;i++) {	
+		// 	console.log('I love the number '+i);
+		// }
+
+		// While
+		// var i = 0
+		// while(i < 10){
+		// 	console.log(i);
+		// 	i++;
+		// }
+
+		// ForEach
+
+		var num = [33,44,55,66,77,88];
+		num.reverse();
+		// num.forEach(function(number) {
+		// 	console.log(number);
+		// });
+
+		// For with Array
+
+		// for(var i=0;i< num.length;i++){
+		// 	console.log(num[i]);
+		// }
+
+
+		// Conditionals
+
+		// IF AND ELSE
+		// var var1 = 3;
+		// var var2 = 2;
+		// if(var1 != var2 && var1 == 3) {
+		// 	console.log('This is True');
+		// }
+		// else {
+		// 	console.log('This is False');
+		// }
+
+		// Switch
+
+		// var fruit = '';
+		// switch(fruit) {
+		// 	case "banana":
+		// 	alert('i hate bananas');
+		// 	break;
+
+		// 	case "apple":
+		// 	alert('i love apples');
+		// 	break;
+
+		// 	case "orange":
+		// 	alert('oranges are ok');
+		// 	break;
+
+		// 	default:
+		// 	alert('I love all other fruits');
+		// 	break; 
+		// }
+
+
+		// Objects
+
+		// Objectts Literal
+
+		var person = {
+			firstName: 'Sujit',
+			lastName: 'Dhaugoda',
+			age: 34,
+			friends: ['Rohan','Suman'],
+			address:{
+				street: '555 newboston 21',
+				city: 'kathmandu',
+				state: 'no'
+			},
+			fullName: function() {
+				return this.firstName+ " " +this.lastName;
+			}
+		}
+
+		// console.log(person.address);
+
+		// console.log(person.fullName());
+
+
+		// Object Constructor
+
+		var apple = new Object();
+		apple.color = 'red';
+		apple.shape = 'round';
+
+
+		apple.describe = function() {
+			return 'An apple is the color '+this.color+' and is the shape of '+this.shape;
+		}
+
+		// console.log(apple.describe());
+
+		// constructor pattern
+
+		function Fruit(name,color,shape){
+			this.name = name;
+			this.color = color;
+			this.shape = shape;
+
+			this.describe = function() {
+				return 'A '+this.name+' is the color '+this.color+' and is the shape '+this.shape;
+			}
+
+		}
+
+		var apple = new Fruit('apple','red','round');
+
+		// console.log(apple);
+
+		// console.log(apple.describe());
+
+
+		var users = [
+			{
+				name: 'John Cena',
+				age: 30
+			},
+			{
+				name: 'Sujit Dhaugoda',
+				age: 20
+			},
+			{
+				name: 'Naruto Uzumaki',
+				age: 30
+			},
+		];
+
+		// console.log(users[0].name);
+
+
+
+	</script>
+</body>
+</html>

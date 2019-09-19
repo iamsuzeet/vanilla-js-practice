@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Weight Converter</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+	<style>
+		body{
+			margin-top: 70px;
+			background: #333;
+			color: #fff;
+		}
+		
+	</style>
+
+
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 offset-md-3">
+				<h1 class="display-4 text-center mb-3">Weight Converter</h1>
+				<form>
+					<div class="form-group">
+					<select class="form-control form-control-lg custom-select" id="weightType">
+					  <option selected>Choose Weight Type</option>
+					  <option value="1">Kilograms</option>
+					  <option value="2">Pounds</option>
+					  <option value="3">Ounces</option>
+					  <option value="4">Grams</option>
+					</select>
+					</div>
+					<div class="form-group">
+						<input type="number" id="weightValue" class="form-control form-control-lg" placeholder="0(Enter Value)">
+					</div>
+				</form>
+				<div id="output">
+					<div class="card bg-primary mb-2 p-2">
+						<div class="card-block" id="lbValue">
+							<h4>Pounds:</h4>
+							<div id="lbOutput"></div>
+						</div>
+					</div>
+
+					<div class="card bg-success mb-2 p-2">
+						<div class="card-block" id="KgValue">
+							<h4>Kilograms:</h4>
+							<div id="kgOutput"></div>
+						</div>
+					</div>
+
+					<div class="card bg-danger mb-2 p-2">
+						<div class="card-block" id="OzValue">
+							<h4>Ounces:</h4>
+							<div id="ozOutput"></div>
+						</div>
+					</div>
+
+					<div class="card bg-secondary mb-2 p-2">
+						<div class="card-block" id="gmValue">
+							<h4>Grams:</h4>
+							<div id="gmOutput"></div>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>SlideShow</title>
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		img{
+			margin: 100px 200px 200px 400px; auto;
+		}
+	</style>
+	<script>
+		var i = 0; // start point
+		var images = [];
+		// image list
+
+		images.push('image1.jpg','image2.jpg','image3.jpg','image4.jpg');
+		// images[0] = 'image1.jpg';
+		// images[1] = 'image2.jpg';
+		// images[2] = 'image3.jpg';
+		// images[3] = 'image4.jpg';
+		var time = 3000;
+
+		
+
+	
+
+		// change images
+		function changeImg() {
+			document.slide.src = images[i];
+			
+			if(i < images.length - 1 ) {
+				i++;
+				console.log(i);
+			}
+			else {
+				i= 0 ;
+			}
+
+			setTimeout("changeImg()",time);
+		}
+		window.onload = changeImg;
+	</script>
+
+</head>
+
+<body>
+	<img name="slide" width="600" height="500">
+</body>
+</html>

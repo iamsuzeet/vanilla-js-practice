@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weight Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+      <header>
+        <h1>Weight Converter</h1>
+      </header>
+
+      <section>
+        <div class="input">
+          <select name="weightSelect" id="weightType" onchange="weightSelected(this)">
+            <option>Select Weight Type</option>
+            <option value="1">Kilograms</option>
+            <option value="2">Grams</option>
+            <option value="3">Pounds</option>
+            <option value="4">Ounces</option>
+
+          </select>
+          <br>
+          <input type="number" id="weightValue" class="weightinput" placeholder="Enter Value Here"></input>
+        </div>
+      
+      <br>
+      <br>
+
+      <div id="output">
+        <div class="card kilogram" id="kgCard">
+          <h3>Kilograms</h3>
+          <h4 id="toKg"></h4>
+        </div>
+
+        <div class="card pound" id="kgCard">
+          <h3>Pounds</h3>
+          <h4 id="toLb"></h4>
+        </div>
+
+        <div class="card gram" id="gmCard">
+          <h3>Grams</h3>
+          <h4 id="toGm"></h4>
+        </div>
+
+        <div class="card ounce" id="ozCard">
+          <h3>Ounces</h3>
+          <h4 id="toOz"></h4>
+        </div>
+      </div>
+
+
+      </section>
+  
+    <footer>
+      <p>Copyright &copy; By Sujit</p>
+    </footer>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
